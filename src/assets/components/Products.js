@@ -1,31 +1,40 @@
 import React, { Component } from 'react';
-import {list} from './Data.js';
+import List from './Data.js';
 
 
 export default class Products extends Component {
 	constructor() {
 		super();
 		this.state = {
-			list
+
 		};
 		this.loopProducts = this.loopProducts.bind(this)
 	}
 loopProducts(){
+var {List} = this.props
 
-var	{list} =this.props
-	return list.map((list) =>{
-		return (<div className="product-wrap">
-			<div className="product">
-				<div className="circle">
-				<img src="https://www.modells.com/dw/image/v2/BBXB_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2c11e3ff/images/large/0000002018/AJ6352_100.jpg?sw=500&sh=500&sm=fit" alt=""/>
 
-				</div>
-			</div>
-			<div className="title">LDWAFFLE</div>
-			<div className="price">2500kr</div>
-		</div>)
-	})
+if(List == undefined || List.length == 0 ){
+	return "Vi har inget som matchar din filtrering."
 }
+
+return List.map((List,index) => {
+
+})
+}
+
+// <div className="product-wrap">
+// 	<div className="product">
+// 		<div className="circle">
+// 		<img src="https://www.modells.com/dw/image/v2/BBXB_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2c11e3ff/images/large/0000002018/AJ6352_100.jpg?sw=500&sh=500&sm=fit" alt=""/>
+//
+// 		</div>
+// 	</div>
+// 	<div className="title">LDWAFFLE</div>
+// 	<div className="price">2500kr</div>
+// </div>
+
+
 	render() {
 		return (
 //sub menu for clothes-type ex Sweater Thshirt Jeans Sweatpants etc

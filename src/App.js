@@ -9,15 +9,14 @@ import Products from './assets/components//Products.js';
 import About from './assets/components/About.js';
 import Login from './assets/components//Login.js';
 
-import {list} from './assets/components/Data.js';
+import List from './assets/components/Data.js';
 
 
-console.log(list)
 export default  class App extends Component {
   constructor(){
     super()
     this.state = {
-    list
+    List
     }
   }
   render(){
@@ -28,7 +27,7 @@ export default  class App extends Component {
       <Header />
         <Route path="/about" component={About} />
         <Route path="/newArrivals" component={Landingpage} />
-        <Route path="/products" component={Products} list={this.state.list}/>
+        <Route path="/products" component={Products} List={this.state.list}/>
         <Route path="/Login" component={Login} />
         </Router>
       </div>
