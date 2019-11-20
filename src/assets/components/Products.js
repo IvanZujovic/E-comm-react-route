@@ -33,7 +33,7 @@ return List.map((product,index) =>{
 
 	render() {
 		return (
-//sub menu for clothes-type ex Sweater Thshirt Jeans Sweatpants etc
+
 
 
 			<section className="content-area products-all-page">
