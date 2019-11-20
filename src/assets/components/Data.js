@@ -1,4 +1,4 @@
-var list = [
+var List = [
   {
     type: 'Pants',
     price:900,
@@ -142,4 +142,4 @@ var list = [
 ]
 
 
-export default list;
+export default List;
