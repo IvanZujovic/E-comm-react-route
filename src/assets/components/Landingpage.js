@@ -4,7 +4,7 @@ export default class Landingpage extends Component {
 	constructor() {
 		super();
 		this.state = {
-			name: 'Joe'
+			
 		};
 	}
 
