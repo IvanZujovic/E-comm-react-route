@@ -6,7 +6,8 @@ export default class Products extends Component {
 	constructor() {
 		super();
 		this.state = {
-			List
+			List,
+			type:''
 		}
 		this.loopProducts = this.loopProducts.bind(this)
 	}
@@ -27,13 +28,18 @@ return List.map((product,index) =>{
 	</div>)
 })
 }
+addFilter(type){
+	if (type == ''){
+		List.filter(item => item.type )
+	}
 
+}
 
 
 
 	render() {
 		return (
-
+//sub menu for clothes-type ex Sweater Thshirt Jeans Sweatpants etc
 
 
 			<section className="content-area products-all-page">
